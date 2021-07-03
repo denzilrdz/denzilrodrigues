@@ -448,20 +448,3 @@ img{
     right: 10%;
   }
 }
-
-/* =====SVG=====*/
-#sign{
-  width: 300px;
-  margin: 0px;
-}
-.sign{
-  stroke-dasharray: 150;
-  stroke-dashoffset: 150;
-  animation: sign 4s ease;
-  animation-fill-mode: forwards;
-}
-@keyframes sign {
-  to{
-    stroke-dashoffset: 0;
-  }
-}
