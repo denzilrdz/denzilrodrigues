@@ -110,7 +110,7 @@ function App() {
             </h1>
 
             <a
-              href='./assets/documents/resume.pdf'
+              href={resume}
               className='button'
               download='Resume of Denzil Rodrigues.pdf'
               target='_blank'
