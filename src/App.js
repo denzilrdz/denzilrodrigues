@@ -321,7 +321,7 @@ function App() {
           <h2 className='section-title'>Work</h2>
 
           <div className='work__container bd-grid'>
-            <div className='work__img'>
+            <div className='work__img' data-aos='fade-up'>
               <img src={eventx1} alt='' />
               <div className='card-body'>
                 <h4 className=''>EventX</h4>
@@ -343,7 +343,7 @@ function App() {
                 </a>
               </div>
             </div>
-            <div className='work__img'>
+            <div className='work__img' data-aos='fade-up'>
               <img src={cart} alt='' />
               <div className='card-body'>
                 <h4 className=''>Cart</h4>
@@ -367,7 +367,7 @@ function App() {
                 </a>
               </div>
             </div>
-            <div className='work__img'>
+            <div className='work__img' data-aos='fade-up'>
               <img src={apartment} alt='' />
               <div className='card-body'>
                 <h4 className=''>Apartment Management System</h4>
@@ -417,6 +417,7 @@ function App() {
               />
               <textarea
                 required
+                placeholder='Message'
                 name='mesg'
                 id='mesg'
                 cols='0'
