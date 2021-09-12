@@ -16,9 +16,10 @@ function App() {
     Aos.init({ duration: 3000 });
   }, []);
   const [msg, setMsg] = useState('');
+
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setMsg('sending');
     emailjs
       .sendForm(
         'service_e9ctw3p',
@@ -310,7 +311,7 @@ function App() {
               </div>
             </div>
 
-            <div>
+            <div data-aos='fade-dowm'>
               <img src={skill} alt='' className='skills__img' />
             </div>
           </div>
@@ -424,12 +425,11 @@ function App() {
                 rows='10'
                 className='contact__input'
               ></textarea>
-              <input
-                type='submit'
-                value='Submit'
-                className='contact__button button'
-              />
+              <button type='submit' className='contact__button button'>
+                Submit
+              </button>
             </form>
+            {msg === 'sending' ? <progress className='message' /> : ''}
             {msg === 'success' ? (
               <p className='message'>Sent Successfully! </p>
             ) : (

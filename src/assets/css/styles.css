@@ -456,4 +456,13 @@ img {
 
 .message {
   padding-top: 1rem;
+  color: var(--second-color);
+}
+progress::-moz-progress-bar {
+  background-color: var(--second-color);
+  color: var(--second-color);
+}
+progress::-webkit-progress-value {
+  background-color: var(--second-color);
+  color: var(--second-color);
 }
