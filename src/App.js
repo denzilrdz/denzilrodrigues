@@ -429,17 +429,19 @@ function App() {
                 Submit
               </button>
             </form>
-            {msg === 'sending' ? <progress className='message' /> : ''}
-            {msg === 'success' ? (
-              <p className='message'>Sent Successfully! </p>
-            ) : (
-              ''
-            )}
-            {msg === 'error' ? (
-              <p className='message'>There was a error try again. </p>
-            ) : (
-              ''
-            )}
+            <div className='message__container'>
+              {msg === 'sending' ? <progress className='message' /> : ''}
+              {msg === 'success' ? (
+                <p className='message'>Sent Successfully! </p>
+              ) : (
+                ''
+              )}
+              {msg === 'error' ? (
+                <p className='message'>There was a error try again. </p>
+              ) : (
+                ''
+              )}
+            </div>
           </div>
         </section>
       </main>

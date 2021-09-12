@@ -455,6 +455,9 @@ img {
 }
 
 .message {
+  color: var(--second-color);
+}
+.message__container {
   padding-top: 1rem;
   color: var(--second-color);
 }
