@@ -16,6 +16,35 @@ function App() {
     Aos.init({ duration: 3000 });
   }, []);
   const [msg, setMsg] = useState('');
+  const [active, setActive] = useState('home');
+  const [homeA, setHomeA] = useState('');
+  const [aboutA, setAboutA] = useState('');
+  const [skillA, setSkillA] = useState('');
+  const [workA, setworkA] = useState('');
+  const [contactA, setContactA] = useState('');
+  const [resumeA, setResumeA] = useState('');
+
+  useEffect(() => {
+    setAboutA('');
+    setHomeA('');
+    setSkillA('');
+    setworkA('');
+    setContactA('');
+    setResumeA('');
+    if (active === 'home') {
+      setHomeA('active');
+    } else if (active === 'about') {
+      setAboutA('active');
+    } else if (active === 'skill') {
+      setSkillA('active');
+    } else if (active === 'work') {
+      setworkA('active');
+    } else if (active === 'contact') {
+      setContactA('active');
+    } else if (active === 'resume') {
+      setResumeA('active');
+    }
+  }, [active, homeA, aboutA, skillA, workA, contactA, resumeA]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -53,36 +82,61 @@ function App() {
           <div className='nav__menu' id='nav-menu'>
             <ul className='nav__list'>
               <li className='nav__item'>
-                <a href='#home' className='nav__link active'>
+                <a
+                  href='#home'
+                  onClick={() => setActive('home')}
+                  className={`nav__link ${homeA}`}
+                >
                   Home
                 </a>
               </li>
               <li className='nav__item'>
-                <a href='#about' className='nav__link' rel='noreferrer'>
+                <a
+                  onClick={() => setActive('about')}
+                  href='#about'
+                  className={`nav__link ${aboutA}`}
+                  rel='noreferrer'
+                >
                   About
                 </a>
               </li>
               <li className='nav__item'>
-                <a href='#skills' className='nav__link' rel='noreferrer'>
+                <a
+                  onClick={() => setActive('skills')}
+                  href='#skills'
+                  className={`nav__link ${skillA}`}
+                  rel='noreferrer'
+                >
                   Skills
                 </a>
               </li>
               <li className='nav__item'>
-                <a href='#work' className='nav__link' rel='noreferrer'>
+                <a
+                  onClick={() => setActive('work')}
+                  href='#work'
+                  className={`nav__link ${workA}`}
+                  rel='noreferrer'
+                >
                   Work
                 </a>
               </li>
               <li className='nav__item'>
-                <a href='#contact' className='nav__link' rel='noreferrer'>
+                <a
+                  onClick={() => setActive('contact')}
+                  href='#contact'
+                  className={`nav__link ${contactA}`}
+                  rel='noreferrer'
+                >
                   Contact
                 </a>
               </li>
               <li className='nav__item'>
                 <a
+                  onClick={() => setActive('resume')}
                   href={resume}
                   download='Resume of Denzil Rodrigues.pdf'
                   target='_blank'
-                  className='nav__link'
+                  className={`nav__link ${resumeA}`}
                   rel='noreferrer'
                 >
                   Resume
