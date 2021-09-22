@@ -347,6 +347,26 @@ function App() {
                 <div className='skills__names'>
                   <span className='skills__icon'>
                     <iconify-icon
+                      data-icon='akar-icons:cloud'
+                      className='skills__icon'
+                    ></iconify-icon>
+                  </span>
+                  <span className='skills__name'>AWS & GOOGLE CLOUD</span>
+                </div>
+                <div className='skills__names'>
+                  <span className='skills__icon'>
+                    <iconify-icon
+                      data-icon='bx:bxl-nodejs'
+                      className='skills__icon'
+                    ></iconify-icon>
+                  </span>
+                  <span className='skills__name'>NODE.JS</span>
+                </div>
+              </div>
+              <div className='skills__data' data-aos='fade-dowm'>
+                <div className='skills__names'>
+                  <span className='skills__icon'>
+                    <iconify-icon
                       data-icon='ant-design:database-filled'
                       className='skills__icon'
                     ></iconify-icon>
