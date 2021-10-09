@@ -102,7 +102,7 @@ function App() {
               </li>
               <li className='nav__item'>
                 <a
-                  onClick={() => setActive('skills')}
+                  onClick={() => setActive('skill')}
                   href='#skills'
                   className={`nav__link ${skillA}`}
                   rel='noreferrer'
