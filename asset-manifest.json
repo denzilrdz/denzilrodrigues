@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/denzilrodrigues/static/css/main.59af59a8.chunk.css",
-    "main.js": "/denzilrodrigues/static/js/main.5e4d1a45.chunk.js",
-    "main.js.map": "/denzilrodrigues/static/js/main.5e4d1a45.chunk.js.map",
+    "main.css": "/denzilrodrigues/static/css/main.f4bd12a3.chunk.css",
+    "main.js": "/denzilrodrigues/static/js/main.886f25f0.chunk.js",
+    "main.js.map": "/denzilrodrigues/static/js/main.886f25f0.chunk.js.map",
     "runtime-main.js": "/denzilrodrigues/static/js/runtime-main.361f037c.js",
     "runtime-main.js.map": "/denzilrodrigues/static/js/runtime-main.361f037c.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/denzilrodrigues/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.b97f0878.chunk.js": "/denzilrodrigues/static/js/2.b97f0878.chunk.js",
-    "static/js/2.b97f0878.chunk.js.map": "/denzilrodrigues/static/js/2.b97f0878.chunk.js.map",
+    "static/js/2.ee32cd4b.chunk.js": "/denzilrodrigues/static/js/2.ee32cd4b.chunk.js",
+    "static/js/2.ee32cd4b.chunk.js.map": "/denzilrodrigues/static/js/2.ee32cd4b.chunk.js.map",
     "static/js/3.6380d90a.chunk.js": "/denzilrodrigues/static/js/3.6380d90a.chunk.js",
     "static/js/3.6380d90a.chunk.js.map": "/denzilrodrigues/static/js/3.6380d90a.chunk.js.map",
     "index.html": "/denzilrodrigues/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/denzilrodrigues/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.59af59a8.chunk.css.map": "/denzilrodrigues/static/css/main.59af59a8.chunk.css.map",
-    "static/js/2.b97f0878.chunk.js.LICENSE.txt": "/denzilrodrigues/static/js/2.b97f0878.chunk.js.LICENSE.txt",
+    "static/css/main.f4bd12a3.chunk.css.map": "/denzilrodrigues/static/css/main.f4bd12a3.chunk.css.map",
+    "static/js/2.ee32cd4b.chunk.js.LICENSE.txt": "/denzilrodrigues/static/js/2.ee32cd4b.chunk.js.LICENSE.txt",
     "static/media/abt.dc8d0faa.jpg": "/denzilrodrigues/static/media/abt.dc8d0faa.jpg",
     "static/media/apartment.65c0d247.gif": "/denzilrodrigues/static/media/apartment.65c0d247.gif",
     "static/media/cart.9ac147fd.gif": "/denzilrodrigues/static/media/cart.9ac147fd.gif",
-    "static/media/resume.edf58727.pdf": "/denzilrodrigues/static/media/resume.edf58727.pdf",
+    "static/media/resume.da44a6dd.pdf": "/denzilrodrigues/static/media/resume.da44a6dd.pdf",
     "static/media/skill.adc2e004.gif": "/denzilrodrigues/static/media/skill.adc2e004.gif",
     "static/media/thumb.975ebf6a.png": "/denzilrodrigues/static/media/thumb.975ebf6a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.361f037c.js",
     "static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.b97f0878.chunk.js",
-    "static/css/main.59af59a8.chunk.css",
-    "static/js/main.5e4d1a45.chunk.js"
+    "static/js/2.ee32cd4b.chunk.js",
+    "static/css/main.f4bd12a3.chunk.css",
+    "static/js/main.886f25f0.chunk.js"
   ]
 }
