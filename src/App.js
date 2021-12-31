@@ -51,10 +51,10 @@ function App() {
     setMsg('sending');
     emailjs
       .sendForm(
-        'service_e9ctw3p',
-        'template_99vytw4',
+        process.env.REACT_APP_EMAIL_JS_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID,
         e.target,
-        'user_p14FQAWoZT5UxyGAN0n9e'
+        process.env.REACT_APP_EMAIL_JS_USER_ID
       )
       .then(
         (result) => {
