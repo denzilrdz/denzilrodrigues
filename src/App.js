@@ -7,7 +7,6 @@ import resume from './assets/documents/resume.pdf';
 import eventx1 from './assets/img/eventx1.jpg';
 import skill from './assets/img/skill.gif';
 import './assets/css/styles.css';
-import emailjs from 'emailjs-com';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -46,26 +45,34 @@ function App() {
     }
   }, [active, homeA, aboutA, skillA, workA, contactA, resumeA]);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
     setMsg('sending');
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_EMAIL_JS_SERVICE_ID,
-        process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID,
-        e.target,
-        process.env.REACT_APP_EMAIL_JS_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setMsg('success');
-        },
-        (error) => {
-          console.log(error.text);
-          setMsg('error');
+    try {
+      const response = await fetch(
+        'https://us-central1-mailer-3abe7.cloudfunctions.net/sendMail',
+        {
+          method: 'POST',
+          body: JSON.stringify({
+            name: e.target.name.value,
+            email: e.target.email.value,
+            message: e.target.message.value,
+            reason: 'portfolio',
+          }),
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+            'Access-Control-Allow-Origin': '*',
+          },
         }
       );
+      const data = await response.json();
+      console.log(data);
+      setMsg('success');
+    } catch (e) {
+      console.error(e);
+      setMsg('error');
+    }
   };
   return (
     <>
@@ -493,8 +500,8 @@ function App() {
               <textarea
                 required
                 placeholder='Message'
-                name='mesg'
-                id='mesg'
+                name='message'
+                id='message'
                 cols='0'
                 rows='10'
                 className='contact__input'
