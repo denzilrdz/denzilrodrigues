@@ -10,7 +10,7 @@ import About from './components/about';
 import Contacts from './components/contact';
 import Work from './components/work';
 
-function App() {
+const App = () => {
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);
@@ -28,6 +28,6 @@ function App() {
       <Footer />
     </React.Fragment>
   );
-}
+};
 
 export default App;
