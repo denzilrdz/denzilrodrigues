@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/denzilrodrigues/static/css/main.f4bd12a3.chunk.css",
-    "main.js": "/denzilrodrigues/static/js/main.c9483cf8.chunk.js",
-    "main.js.map": "/denzilrodrigues/static/js/main.c9483cf8.chunk.js.map",
+    "main.js": "/denzilrodrigues/static/js/main.3b0bfeb5.chunk.js",
+    "main.js.map": "/denzilrodrigues/static/js/main.3b0bfeb5.chunk.js.map",
     "runtime-main.js": "/denzilrodrigues/static/js/runtime-main.80fab22f.js",
     "runtime-main.js.map": "/denzilrodrigues/static/js/runtime-main.80fab22f.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/denzilrodrigues/static/css/2.7fc9bc2b.chunk.css",
@@ -17,7 +17,7 @@
     "static/media/abt.dc8d0faa.jpg": "/denzilrodrigues/static/media/abt.dc8d0faa.jpg",
     "static/media/apartment.65c0d247.gif": "/denzilrodrigues/static/media/apartment.65c0d247.gif",
     "static/media/cart.9ac147fd.gif": "/denzilrodrigues/static/media/cart.9ac147fd.gif",
-    "static/media/resume.da44a6dd.pdf": "/denzilrodrigues/static/media/resume.da44a6dd.pdf",
+    "static/media/resume.2ecd2655.pdf": "/denzilrodrigues/static/media/resume.2ecd2655.pdf",
     "static/media/skill.adc2e004.gif": "/denzilrodrigues/static/media/skill.adc2e004.gif",
     "static/media/thumb.975ebf6a.png": "/denzilrodrigues/static/media/thumb.975ebf6a.png"
   },
@@ -26,6 +26,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.820e1184.chunk.js",
     "static/css/main.f4bd12a3.chunk.css",
-    "static/js/main.c9483cf8.chunk.js"
+    "static/js/main.3b0bfeb5.chunk.js"
   ]
 }
