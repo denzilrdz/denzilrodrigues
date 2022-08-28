@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/denzilrodrigues/static/css/main.f4bd12a3.chunk.css",
-    "main.js": "/denzilrodrigues/static/js/main.78d15428.chunk.js",
-    "main.js.map": "/denzilrodrigues/static/js/main.78d15428.chunk.js.map",
+    "main.js": "/denzilrodrigues/static/js/main.3b0bfeb5.chunk.js",
+    "main.js.map": "/denzilrodrigues/static/js/main.3b0bfeb5.chunk.js.map",
     "runtime-main.js": "/denzilrodrigues/static/js/runtime-main.80fab22f.js",
     "runtime-main.js.map": "/denzilrodrigues/static/js/runtime-main.80fab22f.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/denzilrodrigues/static/css/2.7fc9bc2b.chunk.css",
@@ -26,6 +26,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.820e1184.chunk.js",
     "static/css/main.f4bd12a3.chunk.css",
-    "static/js/main.78d15428.chunk.js"
+    "static/js/main.3b0bfeb5.chunk.js"
   ]
 }
