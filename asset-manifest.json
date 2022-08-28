@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/denzilrodrigues/static/css/main.f4bd12a3.chunk.css",
-    "main.js": "/denzilrodrigues/static/js/main.23ab6e20.chunk.js",
-    "main.js.map": "/denzilrodrigues/static/js/main.23ab6e20.chunk.js.map",
-    "runtime-main.js": "/denzilrodrigues/static/js/runtime-main.38b1c0a9.js",
-    "runtime-main.js.map": "/denzilrodrigues/static/js/runtime-main.38b1c0a9.js.map",
+    "main.js": "/denzilrodrigues/static/js/main.05816186.chunk.js",
+    "main.js.map": "/denzilrodrigues/static/js/main.05816186.chunk.js.map",
+    "runtime-main.js": "/denzilrodrigues/static/js/runtime-main.80fab22f.js",
+    "runtime-main.js.map": "/denzilrodrigues/static/js/runtime-main.80fab22f.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/denzilrodrigues/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.5e0d0981.chunk.js": "/denzilrodrigues/static/js/2.5e0d0981.chunk.js",
-    "static/js/2.5e0d0981.chunk.js.map": "/denzilrodrigues/static/js/2.5e0d0981.chunk.js.map",
-    "static/js/3.a1ba8ebc.chunk.js": "/denzilrodrigues/static/js/3.a1ba8ebc.chunk.js",
-    "static/js/3.a1ba8ebc.chunk.js.map": "/denzilrodrigues/static/js/3.a1ba8ebc.chunk.js.map",
+    "static/js/2.820e1184.chunk.js": "/denzilrodrigues/static/js/2.820e1184.chunk.js",
+    "static/js/2.820e1184.chunk.js.map": "/denzilrodrigues/static/js/2.820e1184.chunk.js.map",
+    "static/js/3.e87faec9.chunk.js": "/denzilrodrigues/static/js/3.e87faec9.chunk.js",
+    "static/js/3.e87faec9.chunk.js.map": "/denzilrodrigues/static/js/3.e87faec9.chunk.js.map",
     "index.html": "/denzilrodrigues/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/denzilrodrigues/static/css/2.7fc9bc2b.chunk.css.map",
     "static/css/main.f4bd12a3.chunk.css.map": "/denzilrodrigues/static/css/main.f4bd12a3.chunk.css.map",
-    "static/js/2.5e0d0981.chunk.js.LICENSE.txt": "/denzilrodrigues/static/js/2.5e0d0981.chunk.js.LICENSE.txt",
+    "static/js/2.820e1184.chunk.js.LICENSE.txt": "/denzilrodrigues/static/js/2.820e1184.chunk.js.LICENSE.txt",
     "static/media/abt.dc8d0faa.jpg": "/denzilrodrigues/static/media/abt.dc8d0faa.jpg",
     "static/media/apartment.65c0d247.gif": "/denzilrodrigues/static/media/apartment.65c0d247.gif",
     "static/media/cart.9ac147fd.gif": "/denzilrodrigues/static/media/cart.9ac147fd.gif",
@@ -22,10 +22,10 @@
     "static/media/thumb.975ebf6a.png": "/denzilrodrigues/static/media/thumb.975ebf6a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.38b1c0a9.js",
+    "static/js/runtime-main.80fab22f.js",
     "static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.5e0d0981.chunk.js",
+    "static/js/2.820e1184.chunk.js",
     "static/css/main.f4bd12a3.chunk.css",
-    "static/js/main.23ab6e20.chunk.js"
+    "static/js/main.05816186.chunk.js"
   ]
 }
