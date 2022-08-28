@@ -11,6 +11,7 @@ const Contacts = (props) => {
         'https://us-central1-mailer-3abe7.cloudfunctions.net/sendMail',
         {
           method: 'POST',
+          mode: 'no-cors',
           body: JSON.stringify({
             name: e.target.name.value,
             email: e.target.email.value,
