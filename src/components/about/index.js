@@ -15,13 +15,16 @@ const About = (props) => {
           <div>
             <h2 className='about__subtitle'>I'am Denzil</h2>
             <p className='about__text'>
-              I am very adaptable to the environment, with focused,
-              quality-oriented work skills that are efficient and
-              result-oriented. A member of AICUF since 2015. I have actively
-              participated in hunger-drives, medical camps, state councils and
-              state camps organized by AICUF. I like to listen to music, sing
-              and play guitar. I am familiar with tools such as Adobe XD, Adobe
-              Premiere, Adobe Photoshop, Snapseed and create short videos.
+              Seeking a challenging software engineering role that leverages my
+              experience as a full stack developer, strong technical skills, and
+              passion for creating innovative software solutions. With
+              proficiency in multiple programming languages and frameworks.xx I
+              am confident in my ability to design, develop, and maintain
+              complex software systems that meet and exceed customer
+              expectations. As a collaborative team player with excellent
+              problem-solving skills and experience working in Agile
+              environments, I am eager to contribute to the success of a dynamic
+              and high-performing software development team.
             </p>
           </div>
         </div>

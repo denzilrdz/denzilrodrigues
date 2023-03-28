@@ -11,9 +11,9 @@ const Skills = (props) => {
           <div>
             <h2 className='skills__subtitle'>Profesional Skills</h2>
             <p className='skills__text'>
-              Focused Computer Applications major, aiming to leverage a proven
-              knowledge of advanced technology, hardware engineering, and
-              database server skills. Please refer my resume for more details.
+              To leverage my strong technical skills and my experience as a full
+              stack developer to contribute to the success of a dynamic and
+              innovative software development team.
             </p>
             <div className='skills__data' data-aos='fade-dowm'>
               <div className='skills__names'>
