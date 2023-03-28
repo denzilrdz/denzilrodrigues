@@ -18,13 +18,13 @@ const About = (props) => {
               Seeking a challenging software engineering role that leverages my
               experience as a full stack developer, strong technical skills, and
               passion for creating innovative software solutions. With
-              proficiency in multiple programming languages and frameworks.xx I
-              am confident in my ability to design, develop, and maintain
-              complex software systems that meet and exceed customer
-              expectations. As a collaborative team player with excellent
-              problem-solving skills and experience working in Agile
-              environments, I am eager to contribute to the success of a dynamic
-              and high-performing software development team.
+              proficiency in multiple programming languages and frameworks, I am
+              confident in my ability to design, develop, and maintain complex
+              software systems that meet and exceed customer expectations. As a
+              collaborative team player with excellent problem-solving skills
+              and experience working in Agile environments, I am eager to
+              contribute to the success of a dynamic and high-performing
+              software development team.
             </p>
           </div>
         </div>
