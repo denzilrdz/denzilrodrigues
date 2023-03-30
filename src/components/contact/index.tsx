@@ -1,12 +1,19 @@
 import { FC, FormEvent, useState } from 'react';
 
 const Contacts: FC = () => {
-  const [msg, setMsg] = useState('');
+  enum msgState {
+    idle,
+    sending,
+    sent,
+    error,
+  }
+
+  const [msg, setMsg] = useState(msgState.idle);
 
   const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
     const target = e.target as HTMLFormElement;
-    setMsg('sending');
+    setMsg(msgState.sending);
     try {
       const response = await fetch(
         'https://us-central1-mailer-3abe7.cloudfunctions.net/sendMail',
@@ -28,13 +35,13 @@ const Contacts: FC = () => {
       const data = await response.json();
       console.log(data);
       if (response.status >= 400) {
-        setMsg('error');
+        setMsg(msgState.error);
         return;
       }
-      setMsg('success');
+      setMsg(msgState.sent);
     } catch (e) {
       console.error(e);
-      setMsg('error');
+      setMsg(msgState.error);
     }
   };
   return (
@@ -74,16 +81,14 @@ const Contacts: FC = () => {
             </button>
           </form>
           <div className='message__container'>
-            {msg === 'sending' ? <progress className='message' /> : ''}
-            {msg === 'success' ? (
-              <p className='message'>Sent Successfully! </p>
-            ) : (
-              ''
+            {msg === msgState.sending && (
+              <progress className='progress_color' />
             )}
-            {msg === 'error' ? (
+            {msg === msgState.sent && (
+              <p className='message'>Sent Successfully! </p>
+            )}
+            {msg === msgState.error && (
               <p className='message'>There was a error try again. </p>
-            ) : (
-              ''
             )}
           </div>
         </div>
