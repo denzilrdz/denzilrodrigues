@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import abt from '../../assets/img/abt.jpg';
 
-const About = (props: FC) => {
+const About: FC = () => {
   return (
     <>
       <section className='about section' id='about' data-aos='fade-up'>

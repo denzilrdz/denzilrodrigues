@@ -1,6 +1,6 @@
 import { FC, FormEvent, useState } from 'react';
 
-const Contacts = (props: FC) => {
+const Contacts: FC = () => {
   const [msg, setMsg] = useState('');
 
   const sendEmail = async (e: FormEvent) => {

@@ -7,7 +7,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 
-const Footer = (props: FC) => {
+const Footer: FC = () => {
   return (
     <>
       <footer className='footer'>

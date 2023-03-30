@@ -5,7 +5,7 @@ import resume from '../../assets/documents/resume.pdf';
 import thumb from '../../assets/img/thumb.png';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-const Home = (props: FC) => {
+const Home: FC = () => {
   return (
     <>
       <section className='home bd-grid' id='home' data-aos='fade-up'>

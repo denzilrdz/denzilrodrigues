@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-const Work = (props: FC) => {
+const Work: FC = () => {
   return (
     <>
       <section className='work section' id='work' data-aos='fade-up'>

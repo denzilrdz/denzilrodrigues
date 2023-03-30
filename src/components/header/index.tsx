@@ -3,7 +3,7 @@ import resume from '../../assets/documents/resume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudDownload } from '@fortawesome/free-solid-svg-icons';
 
-const Header = (props: FC) => {
+const Header: FC = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (

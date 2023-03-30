@@ -7,7 +7,6 @@ import {
   faJava,
   faJira,
   faJs,
-  faNodeJs,
   faPhp,
   faPython,
   faReact,
@@ -19,7 +18,7 @@ import {
   faTimeline,
 } from '@fortawesome/free-solid-svg-icons';
 
-const Skills = (props: FC) => {
+const Skills: FC = () => {
   return (
     <>
       <section className='skills section' id='skills' data-aos='fade-up'>
