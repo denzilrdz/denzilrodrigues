@@ -1,10 +1,13 @@
-import React from 'react';
+import { FC } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCloudDownload } from '@fortawesome/free-solid-svg-icons';
 import resume from '../../assets/documents/resume.pdf';
 import thumb from '../../assets/img/thumb.png';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-const Home = (props) => {
+const Home = (props: FC) => {
   return (
-    <React.Fragment>
+    <>
       <section className='home bd-grid' id='home' data-aos='fade-up'>
         <div className='home__data'>
           <h1 className='home__title'>
@@ -22,7 +25,8 @@ const Home = (props) => {
             target='_blank'
             rel='noreferrer'
           >
-            Resume <iconify-icon data-icon='akar-icons:download'></iconify-icon>
+            Resume{' '}
+            <FontAwesomeIcon className='padding_left' icon={faCloudDownload} />
           </a>
         </div>
 
@@ -33,10 +37,7 @@ const Home = (props) => {
             target='_blank'
             rel='noreferrer'
           >
-            <iconify-icon
-              data-icon='brandico:linkedin-rect'
-              className='bx bxl-linkedin'
-            ></iconify-icon>
+            <FontAwesomeIcon size='xl' icon={faLinkedin} />
           </a>
           <a
             href='https://github.com/denzilrdz'
@@ -44,10 +45,7 @@ const Home = (props) => {
             target='_blank'
             rel='noreferrer'
           >
-            <iconify-icon
-              data-icon='bi:github'
-              className='bx bxl-github'
-            ></iconify-icon>
+            <FontAwesomeIcon size='xl' icon={faGithub} />
           </a>
         </div>
 
@@ -55,7 +53,7 @@ const Home = (props) => {
           <img src={thumb} alt='' />
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 
