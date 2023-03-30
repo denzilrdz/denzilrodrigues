@@ -1,18 +1,21 @@
-import React from 'react';
+import { FC } from 'react';
 import apartment from '../../assets/img/apartment.gif';
 import cart from '../../assets/img/cart.gif';
-import eventx1 from '../../assets/img/eventx1.jpg';
+import eventx from '../../assets/img/eventx.gif';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-const Work = (props) => {
+const Work = (props: FC) => {
   return (
-    <React.Fragment>
+    <>
       <section className='work section' id='work' data-aos='fade-up'>
         <h2 className='section-title'>Work</h2>
 
         <div className='work__container bd-grid'>
           <div className='work__img' data-aos='fade-up'>
-            <img src={eventx1} alt='' />
-            <div className='card-body'>
+            <img src={eventx} alt='' />
+            <div className='card_body'>
               <h4 className=''>EventX</h4>
               <p className='skills__text' style={{ padding: '5px' }}>
                 EVENTX is designed Proudly for Event Rental Businesses. This App
@@ -25,16 +28,13 @@ const Work = (props) => {
                 rel='noreferrer'
                 className='skills__icon'
               >
-                <iconify-icon
-                  data-icon='carbon:view-filled'
-                  className='skills__icon'
-                ></iconify-icon>
+                <FontAwesomeIcon size='sm' icon={faEye} />
               </a>
             </div>
           </div>
           <div className='work__img' data-aos='fade-up'>
             <img src={cart} alt='' />
-            <div className='card-body'>
+            <div className='card_body'>
               <h4 className=''>Cart</h4>
               <p className='skills__text' style={{ padding: '5px' }}>
                 This is not just another e-commerce website but is focused on
@@ -48,16 +48,13 @@ const Work = (props) => {
                 rel='noreferrer'
                 className='skills__icon'
               >
-                <iconify-icon
-                  data-icon='akar-icons:github-fill'
-                  className='skills__icon'
-                ></iconify-icon>
+                <FontAwesomeIcon size='sm' icon={faGithub} />
               </a>
             </div>
           </div>
           <div className='work__img' data-aos='fade-up'>
             <img src={apartment} alt='' />
-            <div className='card-body'>
+            <div className='card_body'>
               <h4 className=''>Apartment Management System</h4>
               <p className='skills__text' style={{ padding: '1px' }}>
                 JSP system for day-to-day activities of apartment like bill
@@ -70,16 +67,13 @@ const Work = (props) => {
                 rel='noreferrer'
                 className='skills__icon'
               >
-                <iconify-icon
-                  data-icon='akar-icons:github-fill'
-                  className='skills__icon'
-                ></iconify-icon>
+                <FontAwesomeIcon size='sm' icon={faGithub} />
               </a>
             </div>
           </div>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

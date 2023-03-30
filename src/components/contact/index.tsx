@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import { FC, FormEvent, useState } from 'react';
 
-const Contacts = (props) => {
+const Contacts = (props: FC) => {
   const [msg, setMsg] = useState('');
 
-  const sendEmail = async (e) => {
+  const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
+    const target = e.target as HTMLFormElement;
     setMsg('sending');
     try {
       const response = await fetch(
@@ -12,9 +13,9 @@ const Contacts = (props) => {
         {
           method: 'POST',
           body: JSON.stringify({
-            name: e.target.name.value,
-            email: e.target.email.value,
-            message: e.target.message.value,
+            name: target.username.value,
+            email: target.email.value,
+            message: target.message.value,
             reason: 'portfolio',
           }),
           headers: {
@@ -37,7 +38,7 @@ const Contacts = (props) => {
     }
   };
   return (
-    <React.Fragment>
+    <>
       <section className='contact section' id='contact' data-aos='fade-up'>
         <h2 className='section-title'>Contact</h2>
 
@@ -45,9 +46,9 @@ const Contacts = (props) => {
           <form onSubmit={sendEmail} className='contact__form'>
             <input
               required
-              name='name'
+              name='username'
               type='text'
-              id='name'
+              id='username'
               placeholder='Name'
               className='contact__input'
             />
@@ -64,8 +65,8 @@ const Contacts = (props) => {
               placeholder='Message'
               name='message'
               id='message'
-              cols='0'
-              rows='10'
+              cols={0}
+              rows={10}
               className='contact__input'
             ></textarea>
             <button type='submit' className='contact__button button'>
@@ -87,7 +88,7 @@ const Contacts = (props) => {
           </div>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

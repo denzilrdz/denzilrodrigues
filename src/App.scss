@@ -1,3 +1,18 @@
+html::-webkit-scrollbar {
+  width: 0.6vw;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #420c2a;
+  border-radius: 5px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #ff9d79;
+  border-radius: 5px;
+}
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 /*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 /*===== VARIABLES CSS =====*/
@@ -6,13 +21,12 @@
   --font-semi: 600;
 }
 
-/*===== Colores =====*/
+/*===== Colors =====*/
 :root {
   --first-color: #ff9d79;
   --second-color: #420c2a;
 }
 
-/*===== Fuente y tipografia =====*/
 :root {
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
@@ -362,7 +376,6 @@ img {
   margin-bottom: var(--mb-4);
 }
 .footer__icon {
-  font-size: 1.5rem;
   color: #fff;
   margin: 0 var(--mb-2);
 }
@@ -466,4 +479,12 @@ progress::-moz-progress-bar {
 }
 progress::-webkit-progress-value {
   color: var(--second-color);
+}
+
+.padding_left {
+  padding-left: 4px;
+}
+
+.card_body {
+  padding: 10px;
 }

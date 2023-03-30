@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import './assets/css/styles.css';
+import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Header from './components/header';
@@ -9,14 +8,15 @@ import Home from './components/home';
 import About from './components/about';
 import Contacts from './components/contact';
 import Work from './components/work';
+import './App.scss';
 
-const App = () => {
+function App() {
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);
 
   return (
-    <React.Fragment>
+    <>
       <Header />
       <main className='l-main'>
         <Home />
@@ -26,8 +26,8 @@ const App = () => {
         <Contacts />
       </main>
       <Footer />
-    </React.Fragment>
+    </>
   );
-};
+}
 
 export default App;

@@ -1,9 +1,9 @@
-import React from 'react';
+import { FC } from 'react';
 import abt from '../../assets/img/abt.jpg';
 
-const About = (props) => {
+const About = (props: FC) => {
   return (
-    <React.Fragment>
+    <>
       <section className='about section' id='about' data-aos='fade-up'>
         <h2 className='section-title'>About</h2>
 
@@ -29,7 +29,7 @@ const About = (props) => {
           </div>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

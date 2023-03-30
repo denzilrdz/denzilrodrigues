@@ -1,8 +1,15 @@
-import React from 'react';
+import { FC } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebookF,
+  faInstagram,
+  faWhatsapp,
+} from '@fortawesome/free-brands-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 
-const Footer = (props) => {
+const Footer = (props: FC) => {
   return (
-    <React.Fragment>
+    <>
       <footer className='footer'>
         <p className='footer__title'>Denzil Rodrigues</p>
         <div className='footer__social'>
@@ -12,10 +19,7 @@ const Footer = (props) => {
             target='_blank'
             rel='noreferrer'
           >
-            <iconify-icon
-              data-icon='brandico:facebook'
-              className='bx bxl-facebook'
-            ></iconify-icon>
+            <FontAwesomeIcon size='xl' icon={faFacebookF} />
           </a>
           <a
             href='https://www.instagram.com/denzil.rdz/'
@@ -23,10 +27,7 @@ const Footer = (props) => {
             target='_blank'
             rel='noreferrer'
           >
-            <iconify-icon
-              data-icon='akar-icons:instagram-fill'
-              className='bx bxl-instagram'
-            ></iconify-icon>
+            <FontAwesomeIcon size='xl' icon={faInstagram} />
           </a>
           <a
             href='https://api.whatsapp.com/send?phone=919113203669'
@@ -34,10 +35,7 @@ const Footer = (props) => {
             target='_blank'
             rel='noreferrer'
           >
-            <iconify-icon
-              data-icon='akar-icons:whatsapp-fill'
-              className='bx bxl-whatsapp'
-            ></iconify-icon>
+            <FontAwesomeIcon size='xl' icon={faWhatsapp} />
           </a>
           <a
             href='mailto: denzil.rdz@gmail.com'
@@ -45,14 +43,11 @@ const Footer = (props) => {
             target='_blank'
             rel='noreferrer'
           >
-            <iconify-icon
-              data-icon='simple-icons:gmail'
-              className='bx bxl-whatsapp'
-            ></iconify-icon>
+            <FontAwesomeIcon size='xl' icon={faPaperPlane} />
           </a>
         </div>
       </footer>
-    </React.Fragment>
+    </>
   );
 };
 

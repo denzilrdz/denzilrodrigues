@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import { FC, useState } from 'react';
 import resume from '../../assets/documents/resume.pdf';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCloudDownload } from '@fortawesome/free-solid-svg-icons';
 
-const Header = (props) => {
+const Header = (props: FC) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <React.Fragment>
+    <>
       <header className='l-header'>
         <nav className='nav bd-grid'>
           <div>
@@ -76,7 +78,10 @@ const Header = (props) => {
                   rel='noreferrer'
                 >
                   Resume
-                  <iconify-icon data-icon='akar-icons:download'></iconify-icon>
+                  <FontAwesomeIcon
+                    className='padding_left'
+                    icon={faCloudDownload}
+                  />
                 </a>
               </li>
             </ul>
@@ -87,7 +92,7 @@ const Header = (props) => {
           </div>
         </nav>
       </header>
-    </React.Fragment>
+    </>
   );
 };
 
