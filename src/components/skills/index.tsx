@@ -55,9 +55,9 @@ const Skills: FC = () => {
               </div>
               <div className='skills__names'>
                 <span className='skills__icon'>
-                  <FontAwesomeIcon size='sm' icon={faJava} />
+                  <FontAwesomeIcon size='sm' icon={faJira} />
                 </span>
-                <span className='skills__name'>Java</span>
+                <span className='skills__name'>JIRA</span>
               </div>
             </div>
             <div className='skills__data' data-aos='fade-down'>
@@ -69,9 +69,9 @@ const Skills: FC = () => {
               </div>
               <div className='skills__names'>
                 <span className='skills__icon'>
-                  <FontAwesomeIcon size='sm' icon={faJira} />
+                  <FontAwesomeIcon size='sm' icon={faJava} />
                 </span>
-                <span className='skills__name'>JIRA</span>
+                <span className='skills__name'>Java</span>
               </div>
             </div>
             <div className='skills__data' data-aos='fade-down'>
