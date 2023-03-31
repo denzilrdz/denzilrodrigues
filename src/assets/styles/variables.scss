@@ -1,0 +1,44 @@
+$firstColor: #ff9d79;
+$secondColor: #420c2a;
+$bodyFont: 'Poppins', sans-serif;
+$headerHeight: 3rem;
+$fontSemi: 600;
+$bigFontSize: 2rem;
+$h2FontSize: 1.25rem;
+$normalFontSize: 0.938rem;
+$mb1: 0.5rem;
+$mb2: 1rem;
+$mb3: 1.5rem;
+$mb4: 2rem;
+$mb5: 2.5rem;
+$mb6: 3rem;
+$zBack: -10;
+$zNormal: 1;
+$zTooltip: 10;
+$zFixed: 100;
+$bigFontSizeMax: 3.5rem;
+$h2FontSizeMax: 2rem;
+$normalFontSizeMax: 1rem;
+
+:export {
+  firstColor: $firstColor;
+  secondColor: $secondColor;
+  headerHeight: $headerHeight;
+  fontSemi: $fontSemi;
+  bigFontSize: $bigFontSize;
+  h2FontSize: $h2FontSize;
+  normalFontSize: $normalFontSize;
+  mb1: $mb1;
+  mb2: $mb2;
+  mb3: $mb3;
+  mb4: $mb4;
+  mb5: $mb5;
+  mb6: $mb6;
+  zBack: $zBack;
+  zNormal: $zNormal;
+  zTooltip: $zTooltip;
+  zFixed: $zFixed;
+  bigFontSizeMax: $bigFontSizeMax;
+  h2FontSizeMax: $bigFontSizeMax;
+  normalFontSizeMax: $bigFontSizeMax;
+}
