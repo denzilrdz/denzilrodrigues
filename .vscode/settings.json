@@ -4,6 +4,6 @@
   "prettier.singleQuote": true,
   "cSpell.words": ["eventx"],
   "yaml.schemas": {
-    "https://json.schemastore.org/github-workflow.json": "file:///d%3A/PGM/denzilrodrigues/.github/workflows/deploy.yml"
+    "https://json.schemastore.org/github-workflow.json": "../.github/workflows/deploy.yml"
   }
 }

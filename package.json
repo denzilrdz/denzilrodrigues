@@ -1,14 +1,12 @@
 {
-  "name": "vite-project",
+  "name": "denzil-rodrigues",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
