@@ -1,4 +1,5 @@
 import { FC, FormEvent, useState } from 'react';
+import { sendMailAction } from './contact.actions';
 
 const Contacts: FC = () => {
   enum msgState {
@@ -15,35 +16,19 @@ const Contacts: FC = () => {
     const target = e.target as HTMLFormElement;
     setMsg(msgState.sending);
     try {
-      const response = await fetch(
-        'https://us-central1-mailer-3abe7.cloudfunctions.net/sendMail',
-        {
-          method: 'POST',
-          body: JSON.stringify({
-            name: target.username.value,
-            email: target.email.value,
-            message: target.message.value,
-            reason: 'portfolio',
-          }),
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json',
-            'Access-Control-Allow-Origin': '*',
-          },
-        }
-      );
-      const data = await response.json();
-      console.log(data);
-      if (response.status >= 400) {
-        setMsg(msgState.error);
-        return;
-      }
+      const payload = {
+        name: target.username.value,
+        email: target.email.value,
+        message: target.message.value,
+        reason: 'portfolio',
+      };
+      await sendMailAction(payload);
       setMsg(msgState.sent);
     } catch (e) {
-      console.error(e);
       setMsg(msgState.error);
     }
   };
+
   return (
     <>
       <section className='contact section' id='contact' data-aos='fade-up'>
