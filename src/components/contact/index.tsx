@@ -1,4 +1,5 @@
 import { FC, FormEvent, useState } from 'react';
+import Styles from './index.module.scss';
 import { sendMailAction } from './contact.actions';
 
 const Contacts: FC = () => {
@@ -31,18 +32,18 @@ const Contacts: FC = () => {
 
   return (
     <>
-      <section className='contact section' id='contact' data-aos='fade-up'>
-        <h2 className='section-title'>Contact</h2>
+      <section className={Styles.section} id='contact' data-aos='fade-up'>
+        <h2 className={Styles.sectionTitle}>Contact</h2>
 
-        <div className='contact__container bd-grid'>
-          <form onSubmit={sendEmail} className='contact__form'>
+        <div className={`${Styles.contactContainer} ${Styles.bdGrid}`}>
+          <form onSubmit={sendEmail} className={Styles.contact__form}>
             <input
               required
               name='username'
               type='text'
               id='username'
               placeholder='Name'
-              className='contact__input'
+              className={Styles.contactInput}
             />
             <input
               required
@@ -50,7 +51,7 @@ const Contacts: FC = () => {
               id='email'
               type='email'
               placeholder='Email'
-              className='contact__input'
+              className={Styles.contactInput}
             />
             <textarea
               required
@@ -59,22 +60,21 @@ const Contacts: FC = () => {
               id='message'
               cols={0}
               rows={10}
-              className='contact__input'
+              className={Styles.contactInput}
             ></textarea>
-            <button type='submit' className='contact__button button'>
+            <button
+              type='submit'
+              className={`${Styles.contactButton} ${Styles.button}`}
+              disabled={msg === msgState.sending ? true : false}
+            >
               Submit
             </button>
           </form>
-          <div className='message__container'>
-            {msg === msgState.sending && (
-              <progress className='progress_color' />
-            )}
-            {msg === msgState.sent && (
-              <p className='message'>Sent Successfully! </p>
-            )}
-            {msg === msgState.error && (
-              <p className='message'>There was a error try again. </p>
-            )}
+          <div className={Styles.messageContainer}>
+            <p className={Styles.message}>
+              {msg === msgState.sent && 'Sent Successfully!'}
+              {msg === msgState.error && 'There was a error try again'}
+            </p>
           </div>
         </div>
       </section>

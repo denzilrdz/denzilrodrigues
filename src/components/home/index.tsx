@@ -1,39 +1,47 @@
 import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudDownload } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Styles from './index.module.scss';
 import resume from '../../assets/documents/resume.pdf';
 import thumb from '../../assets/img/thumb.png';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Home: FC = () => {
   return (
     <>
-      <section className='home bd-grid' id='home' data-aos='fade-up'>
-        <div className='home__data'>
-          <h1 className='home__title'>
+      <section
+        className={`${Styles.home} ${Styles.bdGrid}`}
+        id='home'
+        data-aos='fade-up'
+      >
+        <div className={Styles.homeData}>
+          <h1 className={Styles.homeTitle}>
             Hi,
             <br />
-            I'am <span className='home__title-color'>Denzil</span>
+            I'am <span className={Styles.homeTitleColor}>Denzil</span>
             <br />
             Full Stack Developer
           </h1>
 
           <a
             href={resume}
-            className='button'
+            className={Styles.button}
             download='Resume of Denzil Rodrigues.pdf'
             target='_blank'
             rel='noreferrer'
           >
             Resume{' '}
-            <FontAwesomeIcon className='padding_left' icon={faCloudDownload} />
+            <FontAwesomeIcon
+              className={Styles.paddingLeft}
+              icon={faCloudDownload}
+            />
           </a>
         </div>
 
-        <div className='home__social'>
+        <div className={Styles.homeSocial}>
           <a
             href='https://www.linkedin.com/in/denzil-rodrigues-08abb8151/'
-            className='home__social-icon'
+            className={Styles.homeSocialIcon}
             target='_blank'
             rel='noreferrer'
           >
@@ -41,15 +49,14 @@ const Home: FC = () => {
           </a>
           <a
             href='https://github.com/denzilrdz'
-            className='home__social-icon'
+            className={Styles.homeSocialIcon}
             target='_blank'
             rel='noreferrer'
           >
             <FontAwesomeIcon size='xl' icon={faGithub} />
           </a>
         </div>
-
-        <div className='home__img'>
+        <div className={Styles.homeImg}>
           <img src={thumb} alt='' />
         </div>
       </section>

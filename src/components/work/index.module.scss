@@ -1,0 +1,103 @@
+@use '../../assets/styles/variables.scss' as Variables;
+
+.bdGrid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: Variables.$mb2;
+  margin-right: Variables.$mb2;
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.sectionTitle {
+  position: relative;
+  font-size: Variables.$h2FontSize;
+  color: Variables.$firstColor;
+  margin-top: Variables.$mb2;
+  margin-bottom: Variables.$mb4;
+  text-align: center;
+}
+
+.sectionTitle::after {
+  position: absolute;
+  content: '';
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: Variables.$firstColor;
+}
+
+.workContainer {
+  row-gap: 2rem;
+}
+
+.workImg {
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.workImg img {
+  transition: 1s;
+  cursor: pointer;
+}
+
+.workImg img:hover {
+  transform: scale(1.1);
+}
+
+.workText {
+  margin-bottom: Variables.$mb4;
+}
+
+.workIcon {
+  font-size: 2rem;
+  margin-right: Variables.$mb2;
+  color: Variables.$firstColor;
+}
+
+.workIcon:hover {
+  color: Variables.$secondColor;
+}
+
+.cardBody {
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .sectionTitle {
+    font-size: Variables.$h2FontSizeMax;
+    margin-bottom: Variables.$mb6;
+  }
+
+  .sectionTitle::after {
+    width: 80px;
+    top: 3rem;
+  }
+
+  .workContainer {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bdGrid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

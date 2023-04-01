@@ -1,0 +1,100 @@
+@use '../../assets/styles/variables.scss' as Variables;
+
+.lHeader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: Variables.$zFixed;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+.bdGrid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: Variables.$mb2;
+  margin-right: Variables.$mb2;
+}
+
+.nav {
+  height: Variables.$headerHeight;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: Variables.$fontSemi;
+}
+
+.navItem {
+  margin-bottom: Variables.$mb4;
+}
+
+.navLink {
+  position: relative;
+  color: #fff;
+}
+
+.navLink:hover {
+  position: relative;
+}
+
+.navLink:hover::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: Variables.$firstColor;
+}
+
+.navLogo {
+  color: Variables.$secondColor;
+}
+
+.paddingLeft {
+  padding-left: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .navMenu {
+    position: fixed;
+    top: Variables.$headerHeight;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: Variables.$secondColor;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    height: calc(Variables.$headerHeight + 1rem);
+  }
+
+  .navList {
+    display: flex;
+    padding-top: 0;
+  }
+
+  .navItem {
+    margin-left: Variables.$mb6;
+    margin-bottom: 0;
+  }
+
+  .navLink {
+    color: Variables.$secondColor;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bdGrid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

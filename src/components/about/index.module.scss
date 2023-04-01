@@ -1,0 +1,89 @@
+@use '../../assets/styles/variables.scss' as Variables;
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.sectionTitle {
+  position: relative;
+  font-size: Variables.$h2FontSize;
+  color: Variables.$firstColor;
+  margin-top: Variables.$mb2;
+  margin-bottom: Variables.$mb4;
+  text-align: center;
+}
+
+.sectionTitle::after {
+  position: absolute;
+  content: '';
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: Variables.$firstColor;
+}
+
+.bdGrid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: Variables.$mb2;
+  margin-right: Variables.$mb2;
+}
+
+.aboutContainer {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.aboutImg {
+  justify-self: center;
+}
+
+.aboutImg img {
+  width: 200px;
+  border-radius: 0.5rem;
+}
+
+.aboutSubtitle {
+  margin-bottom: Variables.$mb2;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .sectionTitle {
+    font-size: Variables.$h2FontSizeMax;
+    margin-bottom: Variables.$mb6;
+  }
+
+  .sectionTitle::after {
+    width: 80px;
+    top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bdGrid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .aboutContainer {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+  }
+
+  .aboutImg img {
+    width: 300px;
+  }
+}

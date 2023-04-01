@@ -1,20 +1,19 @@
 import { FC } from 'react';
 import abt from '../../assets/img/abt.jpg';
+import Styles from './index.module.scss';
 
 const About: FC = () => {
   return (
     <>
-      <section className='about section' id='about' data-aos='fade-up'>
-        <h2 className='section-title'>About</h2>
-
-        <div className='about__container bd-grid'>
-          <div className='about__img'>
-            <img src={abt} alt='' />
+      <section className={Styles.section} id='about' data-aos='fade-up'>
+        <h2 className={Styles.sectionTitle}>About</h2>
+        <div className={`${Styles.aboutContainer} ${Styles.bdGrid}`}>
+          <div className={Styles.aboutImg}>
+            <img src={abt} alt='Denzil' />
           </div>
-
           <div>
-            <h2 className='about__subtitle'>I'am Denzil</h2>
-            <p className='about__text'>
+            <h2 className={Styles.aboutSubtitle}>I'am Denzil</h2>
+            <p>
               Seeking a challenging software engineering role that leverages my
               experience as a full stack developer, strong technical skills, and
               passion for creating innovative software solutions. With

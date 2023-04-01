@@ -1,0 +1,23 @@
+@use '../../assets/styles/variables.scss' as Variables;
+
+.footer {
+  background-color: Variables.$secondColor;
+  color: #fff;
+  text-align: center;
+  font-weight: Variables.$fontSemi;
+  padding: 2rem 0;
+}
+.footerTitle {
+  font-size: 2rem;
+  margin-bottom: Variables.$mb4;
+}
+.footerSocial {
+  margin-bottom: Variables.$mb4;
+}
+.footerIcon {
+  color: #fff;
+  margin: 0 Variables.$mb2;
+}
+
+@media screen and (min-width: 768px) {
+}

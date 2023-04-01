@@ -1,5 +1,7 @@
 $firstColor: #ff9d79;
 $secondColor: #420c2a;
+$disabledFirstColor: #ecc6b9;
+$bShadow: rgba(0, 0, 0, 0.15);
 $bodyFont: 'Poppins', sans-serif;
 $headerHeight: 3rem;
 $fontSemi: 600;
@@ -23,6 +25,8 @@ $normalFontSizeMax: 1rem;
 :export {
   firstColor: $firstColor;
   secondColor: $secondColor;
+  disabledFirstColor: $disabledFirstColor;
+  bShadow: $bShadow;
   headerHeight: $headerHeight;
   fontSemi: $fontSemi;
   bigFontSize: $bigFontSize;

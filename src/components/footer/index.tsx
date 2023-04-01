@@ -6,16 +6,17 @@ import {
   faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
+import Styles from './index.module.scss';
 
 const Footer: FC = () => {
   return (
     <>
-      <footer className='footer'>
-        <p className='footer__title'>Denzil Rodrigues</p>
-        <div className='footer__social'>
+      <footer className={Styles.footer}>
+        <p className={Styles.footerTitle}>Denzil Rodrigues</p>
+        <div className={Styles.footerSocial}>
           <a
             href='https://www.facebook.com/denziljr9/'
-            className='footer__icon'
+            className={Styles.footerIcon}
             target='_blank'
             rel='noreferrer'
           >
@@ -23,7 +24,7 @@ const Footer: FC = () => {
           </a>
           <a
             href='https://www.instagram.com/denzil.rdz/'
-            className='footer__icon'
+            className={Styles.footerIcon}
             target='_blank'
             rel='noreferrer'
           >
@@ -31,7 +32,7 @@ const Footer: FC = () => {
           </a>
           <a
             href='https://api.whatsapp.com/send?phone=919113203669'
-            className='footer__icon'
+            className={Styles.footerIcon}
             target='_blank'
             rel='noreferrer'
           >
@@ -39,7 +40,7 @@ const Footer: FC = () => {
           </a>
           <a
             href='mailto: denzil.rdz@gmail.com'
-            className='footer__icon'
+            className={Styles.footerIcon}
             target='_blank'
             rel='noreferrer'
           >

@@ -1,94 +1,63 @@
-import { FC, useState } from 'react';
-import resume from '../../assets/documents/resume.pdf';
+import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudDownload } from '@fortawesome/free-solid-svg-icons';
+import Styles from './index.module.scss';
+import resume from '../../assets/documents/resume.pdf';
 
 const Header: FC = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
   return (
     <>
-      <header className='l-header'>
-        <nav className='nav bd-grid'>
+      <header className={Styles.lHeader}>
+        <nav className={`${Styles.nav} ${Styles.bdGrid}`}>
           <div>
-            {/* eslint-disable-next-line */}
-            <a href='#' className='nav__logo' rel='noreferrer'>
+            <a href='#' className={Styles.navLogo} rel='noreferrer'>
               Denzil Rodrigues
             </a>
           </div>
 
-          <div className='nav__menu' id='nav-menu'>
-            <ul className='nav__list'>
-              <li className='nav__item'>
-                <a
-                  href='#home'
-                  onClick={() => setActiveTab(0)}
-                  className={`nav__link ${activeTab === 0 ? 'active' : ''}`}
-                >
+          <div className={Styles.navMenu} id='nav-menu'>
+            <ul className={Styles.navList}>
+              <li className={Styles.navItem}>
+                <a href='#home' className={Styles.navLink} rel='noreferrer'>
                   Home
                 </a>
               </li>
-              <li className='nav__item'>
-                <a
-                  onClick={() => setActiveTab(1)}
-                  href='#about'
-                  className={`nav__link ${activeTab === 1 ? 'active' : ''}`}
-                  rel='noreferrer'
-                >
+              <li className={Styles.navItem}>
+                <a href='#about' className={Styles.navLink} rel='noreferrer'>
                   About
                 </a>
               </li>
-              <li className='nav__item'>
-                <a
-                  onClick={() => setActiveTab(2)}
-                  href='#skills'
-                  className={`nav__link ${activeTab === 2 ? 'active' : ''}`}
-                  rel='noreferrer'
-                >
+              <li className={Styles.navItem}>
+                <a href='#skills' className={Styles.navLink} rel='noreferrer'>
                   Skills
                 </a>
               </li>
-              <li className='nav__item'>
-                <a
-                  onClick={() => setActiveTab(3)}
-                  href='#work'
-                  className={`nav__link ${activeTab === 3 ? 'active' : ''}`}
-                  rel='noreferrer'
-                >
+              <li className={Styles.navItem}>
+                <a href='#work' className={Styles.navLink} rel='noreferrer'>
                   Work
                 </a>
               </li>
-              <li className='nav__item'>
-                <a
-                  onClick={() => setActiveTab(4)}
-                  href='#contact'
-                  className={`nav__link ${activeTab === 4 ? 'active' : ''}`}
-                  rel='noreferrer'
-                >
+              <li className={Styles.navItem}>
+                <a href='#contact' className={Styles.navLink} rel='noreferrer'>
                   Contact
                 </a>
               </li>
-              <li className='nav__item'>
+              <li className={Styles.navItem}>
                 <a
-                  onClick={() => setActiveTab(5)}
                   href={resume}
                   download='Resume of Denzil Rodrigues.pdf'
                   target='_blank'
-                  className={`nav__link ${activeTab === 5 ? 'active' : ''}`}
+                  className={Styles.navLink}
                   rel='noreferrer'
                 >
                   Resume
                   <FontAwesomeIcon
-                    className='padding_left'
+                    className={Styles.paddingLeft}
                     icon={faCloudDownload}
                   />
                 </a>
               </li>
             </ul>
-          </div>
-
-          <div className='nav__toggle' id='nav-toggle'>
-            <i className='bx bx-menu'></i>
           </div>
         </nav>
       </header>

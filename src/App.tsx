@@ -10,7 +10,7 @@ import Contacts from './components/contact';
 import Work from './components/work';
 import './App.scss';
 
-function App() {
+const App = () => {
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);
@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className='l-main'>
+      <main>
         <Home />
         <About />
         <Skills />
@@ -28,6 +28,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;

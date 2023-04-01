@@ -1,0 +1,116 @@
+@use '../../assets/styles/variables.scss' as Variables;
+
+.bdGrid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: Variables.$mb2;
+  margin-right: Variables.$mb2;
+}
+
+.home {
+  height: calc(100vh - 3rem);
+  row-gap: 1rem;
+}
+
+.homeData {
+  align-self: center;
+}
+
+.homeTitle {
+  font-size: Variables.$bigFontSize;
+  margin-bottom: Variables.$mb5;
+}
+
+.homeTitleColor {
+  color: Variables.$firstColor;
+}
+
+.homeSocial {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeSocialIcon {
+  width: max-content;
+  margin-bottom: Variables.$mb2;
+  font-size: 1.5rem;
+  color: Variables.$secondColor;
+}
+
+.homeSocialIcon:hover {
+  color: Variables.$firstColor;
+}
+
+.homeImg {
+  position: absolute;
+  padding-left: 6rem;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+}
+
+.button {
+  display: inline-block;
+  background-color: Variables.$firstColor;
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  font-weight: Variables.$fontSemi;
+  border-radius: 0.5rem;
+}
+
+.button:hover {
+  box-shadow: 0 10px 36px Variables.$bShadow;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  background-color: Variables.$disabledFirstColor;
+}
+
+.paddingLeft {
+  padding-left: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    height: 100vh;
+  }
+
+  .homeData {
+    align-self: flex-end;
+  }
+
+  .homeSocial {
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+    flex-direction: row;
+    align-self: flex-end;
+  }
+
+  .homeSocialIcon {
+    margin-bottom: 0;
+    margin-right: Variables.$mb4;
+  }
+
+  .homeImg {
+    width: 457px;
+    bottom: 15%;
+  }
+
+  .homeTitle {
+    font-size: Variables.$bigFontSizeMax;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bdGrid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .homeImg {
+    right: 10%;
+  }
+}
