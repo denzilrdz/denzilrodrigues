@@ -1,8 +1,8 @@
-import { cloudFuncBaseUrl, defaultReqHeaders } from '../../config/config';
+import { exeUrls, defaultReqHeaders } from '../../config/config';
 
 export const sendMailAction = async (payload: Object) => {
   try {
-    const url = `${cloudFuncBaseUrl}/sendMail`;
+    const url = `${exeUrls.cloudFuncBaseUrl}/sendMail`;
     const res = await fetch(url, {
       method: 'POST',
       headers: defaultReqHeaders,
