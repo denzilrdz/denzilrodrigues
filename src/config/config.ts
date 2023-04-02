@@ -5,7 +5,7 @@ const exeEnvObj = Object.freeze({
 const exeEnv = exeEnvObj.prod;
 
 const urls = Object.freeze({
-  prod: {
+  [exeEnvObj.prod]: {
     cloudFuncBaseUrl: 'https://us-central1-mailer-3abe7.cloudfunctions.net',
   },
 });
