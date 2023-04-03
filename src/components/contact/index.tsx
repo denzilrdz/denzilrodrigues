@@ -1,6 +1,8 @@
 import { FC, FormEvent, useState } from 'react';
 import Styles from './index.module.scss';
 import { sendMailAction } from './contact.actions';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 const Contacts: FC = () => {
   enum msgState {
@@ -65,9 +67,13 @@ const Contacts: FC = () => {
             <button
               type='submit'
               className={`${Styles.contactButton} ${Styles.button}`}
-              disabled={msg === msgState.sending ? true : false}
+              disabled={msg === msgState.sending}
             >
-              Submit
+              {msg === msgState.sending ? (
+                <FontAwesomeIcon className={Styles.loader} icon={faSpinner} />
+              ) : (
+                'Submit'
+              )}
             </button>
           </form>
           <div className={Styles.messageContainer}>
