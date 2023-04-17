@@ -16,7 +16,7 @@ import {
   faDatabase,
   faTimeline,
 } from '@fortawesome/free-solid-svg-icons';
-import skill from '../../assets/img/skill.gif';
+import skill from '@assets/img/skill.gif';
 import Styles from './index.module.scss';
 
 const Skills: FC = () => {

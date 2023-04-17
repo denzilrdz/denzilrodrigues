@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import Header from './components/header';
-import Footer from './components/footer';
-import Skills from './components/skills';
-import Home from './components/home';
-import About from './components/about';
-import Contacts from './components/contact';
-import Work from './components/work';
+import Header from '@components/header';
+import Footer from '@components/footer';
+import Skills from '@components/skills';
+import Home from '@components/home';
+import About from '@components/about';
+import Contacts from '@components/contact';
+import Work from '@components/work';
 import './App.scss';
 
 const App = () => {

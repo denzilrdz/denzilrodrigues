@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudDownload } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Styles from './index.module.scss';
-import resume from '../../assets/documents/resume.pdf';
-import thumb from '../../assets/img/thumb.png';
+import resume from '@assets/documents/resume.pdf';
+import thumb from '@assets/img/thumb.png';
 
 const Home: FC = () => {
   return (

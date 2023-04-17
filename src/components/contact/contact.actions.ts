@@ -1,4 +1,4 @@
-import { exeUrls, defaultReqHeaders } from '../../config/config';
+import { exeUrls, defaultReqHeaders } from '@config/config';
 
 export const sendMailAction = async (payload: Object) => {
   try {

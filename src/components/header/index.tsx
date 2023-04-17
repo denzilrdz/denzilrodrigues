@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudDownload } from '@fortawesome/free-solid-svg-icons';
 import Styles from './index.module.scss';
-import resume from '../../assets/documents/resume.pdf';
+import resume from '@assets/documents/resume.pdf';
 
 const Header: FC = () => {
   return (

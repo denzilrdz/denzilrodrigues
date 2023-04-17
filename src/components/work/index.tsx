@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import apartment from '../../assets/img/apartment.gif';
-import cart from '../../assets/img/cart.gif';
-import eventx from '../../assets/img/eventx.gif';
+import apartment from '@assets/img/apartment.gif';
+import cart from '@assets/img/cart.gif';
+import eventx from '@assets/img/eventx.gif';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';

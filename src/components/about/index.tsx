@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import abt from '../../assets/img/abt.jpg';
+import abt from '@assets/img/abt.jpg'
 import Styles from './index.module.scss';
 
 const About: FC = () => {
