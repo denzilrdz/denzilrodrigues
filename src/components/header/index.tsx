@@ -10,7 +10,7 @@ const Header: FC = () => {
       <header className={Styles.lHeader}>
         <nav className={`${Styles.nav} ${Styles.bdGrid}`}>
           <div>
-            <a href='#' className={Styles.navLogo} rel='noreferrer'>
+            <a href='#home' className={Styles.navLogo} rel='noreferrer'>
               Denzil Rodrigues
             </a>
           </div>
