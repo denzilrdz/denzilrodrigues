@@ -38,12 +38,15 @@
 
 .workContainer {
   row-gap: 2rem;
+  width: 100vw;
+  margin: auto;
 }
 
 .workImg {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
+  width: 100%;
 }
 
 .workImg img {
@@ -56,21 +59,31 @@
 }
 
 .workText {
-  margin-bottom: Variables.$mb4;
+  padding: 0 Variables.$mb1 Variables.$mb1 Variables.$mb1;
 }
 
 .workIcon {
   font-size: 2rem;
-  margin-right: Variables.$mb2;
+  position: absolute;
+  padding-left: Variables.$mb1;
   color: Variables.$firstColor;
+  bottom: 0;
+  margin-bottom: 3vh;
 }
 
 .workIcon:hover {
   color: Variables.$secondColor;
 }
 
+.workTitle {
+  padding-left: Variables.$mb1;
+}
+
 .cardBody {
-  padding: 10px;
+  margin: Variables.$mb3;
+  background-color: rgb(250, 250, 250);
+  min-height: 80vh;
+  border-radius: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -90,8 +103,7 @@
   }
 
   .workContainer {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
+    width: 90vw;
   }
 }
 
