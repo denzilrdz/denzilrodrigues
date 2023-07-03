@@ -64,11 +64,9 @@
 
 .workIcon {
   font-size: 2rem;
-  position: absolute;
-  padding-left: Variables.$mb1;
+  position: relative;
+  padding: Variables.$mb1;
   color: Variables.$firstColor;
-  bottom: 0;
-  margin-bottom: 3vh;
 }
 
 .workIcon:hover {
@@ -82,7 +80,7 @@
 .cardBody {
   margin: Variables.$mb3;
   background-color: rgb(250, 250, 250);
-  min-height: 80vh;
+  min-height: auto;
   border-radius: 0.5rem;
 }
 
@@ -104,6 +102,19 @@
 
   .workContainer {
     width: 90vw;
+  }
+
+  .workIcon {
+    font-size: 2rem;
+    position: absolute;
+    padding-left: Variables.$mb1;
+    color: Variables.$firstColor;
+    bottom: 0;
+    margin-bottom: 3vh;
+  }
+
+  .cardBody {
+    min-height: 80vh;
   }
 }
 
