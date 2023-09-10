@@ -19,7 +19,6 @@ const Work: FC = () => {
 
   useEffect(() => {
     const handleWidthResize = () => {
-      console.log(getWindowWidth());
       setWindowWidth(getWindowWidth());
     };
     window.addEventListener('resize', handleWidthResize);
