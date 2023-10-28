@@ -42,7 +42,7 @@ const Work: FC = () => {
       img: eventx,
       description:
         ' EVENTX is designed Proudly for Event Rental Businesses. This App encompasses spectrum of advanced functionalities. This is developed using React and firebase Realtime database.',
-      link: 'https://fourthrocktechnologies.in/',
+      link: 'https://fourth-rock.web.app/',
       github: '',
     },
     {
