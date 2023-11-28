@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloudDownload } from '@fortawesome/free-solid-svg-icons';
+import { faCloudDownload, faStar } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Styles from './index.module.scss';
 import resume from '@assets/documents/resume.pdf';
@@ -54,6 +54,14 @@ const Home: FC = () => {
             rel='noreferrer'
           >
             <FontAwesomeIcon size='xl' icon={faGithub} />
+          </a>
+          <a
+            href='https://www.credly.com/users/denzil-rodrigues.37a236dc/badges'
+            className={Styles.homeSocialIcon}
+            target='_blank'
+            rel='noreferrer'
+          >
+            <FontAwesomeIcon size='xl' icon={faStar} />
           </a>
         </div>
         <div className={Styles.homeImg}>

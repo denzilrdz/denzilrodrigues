@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 import Styles from './index.module.scss';
+import Batches from '@components/batches';
 
 const Footer: FC = () => {
   return (
@@ -46,6 +47,9 @@ const Footer: FC = () => {
           >
             <FontAwesomeIcon size='xl' icon={faPaperPlane} />
           </a>
+        </div>
+        <div className=''>
+          <Batches />
         </div>
       </footer>
     </>
