@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Styles from './index.module.scss';
+import cloudQuestPractitioner from '@assets/img/cloudQuestPractitioner.png';
 
 const Batches: FC = () => {
   const credlyBaseUrl = 'https://www.credly.com';
@@ -7,8 +8,7 @@ const Batches: FC = () => {
     {
       id: 'fab9976f-bda3-4d48-9522-9b7865ec530e',
       name: 'AWS Cloud Quest: Cloud Practitioner',
-      image_url:
-        'https://images.credly.com/images/2784d0d8-327c-406f-971e-9f0e15097003/image.png',
+      image_url: cloudQuestPractitioner,
     },
   ];
   return (
