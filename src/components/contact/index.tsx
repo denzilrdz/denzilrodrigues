@@ -4,6 +4,7 @@ import { sendMailAction } from './contact.actions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { exeUrls } from '@config/config';
+import { trackContactFormSubmit } from '@config/analytics';
 
 const Contacts: FC = () => {
   enum msgState {
@@ -80,6 +81,7 @@ const Contacts: FC = () => {
         recaptchaToken,
       };
       await sendMailAction(payload);
+      trackContactFormSubmit();
       setMsg(msgState.sent);
     } catch (e) {
       setMsg(msgState.error);

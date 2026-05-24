@@ -8,6 +8,7 @@ import {
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 import Styles from './index.module.scss';
 import Batches from '@components/batches';
+import { trackSocialClick } from '@config/analytics';
 
 const Footer: FC = () => {
   return (
@@ -20,6 +21,7 @@ const Footer: FC = () => {
             className={Styles.footerIcon}
             target='_blank'
             rel='noreferrer'
+            onClick={() => trackSocialClick('facebook', 'footer')}
           >
             <FontAwesomeIcon size='xl' icon={faFacebookF} />
           </a>
@@ -28,6 +30,7 @@ const Footer: FC = () => {
             className={Styles.footerIcon}
             target='_blank'
             rel='noreferrer'
+            onClick={() => trackSocialClick('instagram', 'footer')}
           >
             <FontAwesomeIcon size='xl' icon={faInstagram} />
           </a>
@@ -36,6 +39,7 @@ const Footer: FC = () => {
             className={Styles.footerIcon}
             target='_blank'
             rel='noreferrer'
+            onClick={() => trackSocialClick('whatsapp', 'footer')}
           >
             <FontAwesomeIcon size='xl' icon={faWhatsapp} />
           </a>
@@ -44,6 +48,7 @@ const Footer: FC = () => {
             className={Styles.footerIcon}
             target='_blank'
             rel='noreferrer'
+            onClick={() => trackSocialClick('email', 'footer')}
           >
             <FontAwesomeIcon size='xl' icon={faPaperPlane} />
           </a>

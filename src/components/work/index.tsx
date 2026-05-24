@@ -9,6 +9,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Styles from './index.module.scss';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import { trackProjectClick } from '@config/analytics';
 
 const Work: FC = () => {
   const getWindowWidth = () => {
@@ -90,6 +91,7 @@ const Work: FC = () => {
                       target='_blank'
                       rel='noreferrer'
                       className={Styles.workIcon}
+                      onClick={() => trackProjectClick(ele.label, 'live')}
                     >
                       <FontAwesomeIcon size='sm' icon={faEye} />
                     </a>
@@ -100,6 +102,7 @@ const Work: FC = () => {
                       target='_blank'
                       rel='noreferrer'
                       className={Styles.workIcon}
+                      onClick={() => trackProjectClick(ele.label, 'github')}
                     >
                       <FontAwesomeIcon size='sm' icon={faGithub} />
                     </a>

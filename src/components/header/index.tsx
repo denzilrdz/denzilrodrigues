@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudDownload } from '@fortawesome/free-solid-svg-icons';
 import Styles from './index.module.scss';
 import resume from '@assets/documents/resume.pdf';
+import { trackResumeDownload } from '@config/analytics';
 
 const Header: FC = () => {
   return (
@@ -49,6 +50,7 @@ const Header: FC = () => {
                   target='_blank'
                   className={Styles.navLink}
                   rel='noreferrer'
+                  onClick={() => trackResumeDownload('header')}
                 >
                   Resume
                   <FontAwesomeIcon

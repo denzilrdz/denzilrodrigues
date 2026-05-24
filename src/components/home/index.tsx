@@ -5,6 +5,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Styles from './index.module.scss';
 import resume from '@assets/documents/resume.pdf';
 import thumb from '@assets/img/thumb.png';
+import { trackResumeDownload, trackSocialClick } from '@config/analytics';
 
 const Home: FC = () => {
   return (
@@ -29,6 +30,7 @@ const Home: FC = () => {
             download='Resume of Denzil Rodrigues.pdf'
             target='_blank'
             rel='noreferrer'
+            onClick={() => trackResumeDownload('home')}
           >
             Resume{' '}
             <FontAwesomeIcon
@@ -44,6 +46,7 @@ const Home: FC = () => {
             className={Styles.homeSocialIcon}
             target='_blank'
             rel='noreferrer'
+            onClick={() => trackSocialClick('linkedin', 'home')}
           >
             <FontAwesomeIcon size='xl' icon={faLinkedin} />
           </a>
@@ -52,6 +55,7 @@ const Home: FC = () => {
             className={Styles.homeSocialIcon}
             target='_blank'
             rel='noreferrer'
+            onClick={() => trackSocialClick('github', 'home')}
           >
             <FontAwesomeIcon size='xl' icon={faGithub} />
           </a>
@@ -60,6 +64,7 @@ const Home: FC = () => {
             className={Styles.homeSocialIcon}
             target='_blank'
             rel='noreferrer'
+            onClick={() => trackSocialClick('credly', 'home')}
           >
             <FontAwesomeIcon size='xl' icon={faStar} />
           </a>
