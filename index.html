@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="theme-color" content="#0e1418" />
 
     <!-- Primary Meta -->
-    <title>Denzil Rodrigues | Full Stack & AI Developer</title>
+    <title>Upgrade in Progress | Denzil Rodrigues</title>
     <meta name="author" content="Denzil Rodrigues" />
     <meta
       name="description"
@@ -20,21 +20,16 @@
     <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Denzil Rodrigues" />
-    <meta
-      property="og:title"
-      content="Denzil Rodrigues | Full Stack & AI Developer"
-    />
+    <meta property="og:title" content="Denzil Rodrigues | Full Stack & AI Developer" />
     <meta
       property="og:description"
       content="Portfolio of Denzil Rodrigues — Full Stack Developer specializing in Python, React, Node.js, AWS, and AI tools like LangChain, LangGraph, and MCP."
     />
-    <meta
-      property="og:url"
-      content="https://denzilrdz.github.io/denzilrodrigues"
-    />
+    <!-- OG URL points to old site per requirements -->
+    <meta property="og:url" content="https://denzilrdz.github.io/denzilrodrigues" />
     <meta
       property="og:image"
-      content="https://denzilrdz.github.io/denzilrodrigues/denzil.png"
+      content="https://denzilrdz.github.io/denzilrodrigues/web-app-manifest-512x512.png"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -43,32 +38,134 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Denzil Rodrigues | Full Stack & AI Developer"
-    />
+    <meta name="twitter:title" content="Denzil Rodrigues | Full Stack & AI Developer" />
     <meta
       name="twitter:description"
       content="Portfolio of Denzil Rodrigues — Full Stack Developer specializing in Python, React, Node.js, AWS, and AI tools like LangChain, LangGraph, and MCP."
     />
     <meta
       name="twitter:image"
-      content="https://denzilrdz.github.io/denzilrodrigues/denzil.png"
+      content="https://denzilrdz.github.io/denzilrodrigues/web-app-manifest-512x512.png"
     />
 
     <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/maskable_icon_x192.png" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <script
-      src="https://www.google.com/recaptcha/enterprise.js"
-      async
-      defer
-    ></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;family=Syne:wght@400..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind v4 CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/index.css" />
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body
+    class="relative min-h-screen flex flex-col items-center justify-center font-mono text-body-md overflow-hidden bg-void text-on-void"
+  >
+    <!-- Top Progress Bar (Static thin line) -->
+    <div
+      class="fixed top-0 left-0 w-full h-[2px] bg-mint z-[100] shadow-[0_0_10px_rgba(0,255,178,0.8)]"
+    ></div>
+    <!-- Background Elements -->
+    <div class="fixed inset-0 z-[-2] bg-grid"></div>
+    <div class="fixed inset-0 z-[-1] scanlines"></div>
+    <div id="particles"></div>
+    <!-- Centerpiece Canvas -->
+    <main
+      class="relative z-10 flex flex-col items-center justify-center w-full max-w-[800px] px-5 md:px-16 text-center py-20"
+    >
+      <!-- Label -->
+      <div
+        class="inline-block px-4 py-1 mb-8 border border-mint rounded-chip text-mint font-mono text-label font-bold tracking-[0.08em] uppercase shadow-[0_0_15px_rgba(0,255,178,0.2)] bg-transparent"
+      >
+        [v2.0.0] NOW AVAILABLE
+      </div>
+      <!-- Heading -->
+      <h1
+        class="font-display text-display-mob md:text-display-xl text-on-void mb-12 glow-text leading-tight uppercase font-bold"
+      >
+        NEW PORTFOLIO<br />
+        IS LIVE
+      </h1>
+      <!-- Version Diff Block (Changelog Terminal) -->
+      <div
+        class="glass-card w-full max-w-2xl rounded-none p-6 md:p-8 mb-12 text-left text-on-void font-mono text-code border-t border-b-0 border-l-0 border-r-0 border-[rgba(232,244,242,0.1)] relative"
+      >
+        <div
+          class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-mint to-transparent opacity-20"
+        ></div>
+        <div class="flex items-center gap-2 mb-4 text-on-muted opacity-70">
+          <span class="material-symbols-outlined text-[16px]">terminal</span>
+          <span>CHANGELOG: v1.0 → v2.0</span>
+        </div>
+        <div class="w-full h-px bg-outline-dim mb-4 opacity-50"></div>
+        <ul class="space-y-3 mb-6">
+          <li
+            class="flex items-start gap-3 hover:bg-void-mid/50 p-1 -ml-1 rounded-none transition-colors duration-200"
+          >
+            <span class="text-mint shrink-0 font-bold">+</span>
+            <span class="text-mint">Redesigned UI — built from scratch</span>
+          </li>
+          <li
+            class="flex items-start gap-3 hover:bg-void-mid/50 p-1 -ml-1 rounded-none transition-colors duration-200 opacity-80"
+          >
+            <span class="text-danger shrink-0 font-bold">-</span>
+            <span class="text-danger line-through decoration-danger/50"
+              >Old layout (deprecated)</span
+            >
+          </li>
+        </ul>
+        <div class="w-full h-px bg-outline-dim mb-4 opacity-50"></div>
+        <div class="flex items-center gap-2 text-on-muted text-sm">
+          <span class="text-mint">&gt;</span>
+          <span>deploy status: LIVE</span>
+          <span class="text-mint animate-blink ml-1 text-xs">●</span>
+        </div>
+      </div>
+      <!-- Main CTA Button -->
+      <a
+        class="inline-flex items-center justify-center px-8 py-3.5 bg-coral text-void-deep font-display font-bold text-body-md rounded-none hover:brightness-110 hover:-translate-y-0.5 transition-all duration-150 shadow-[0_0_20px_rgba(255,107,107,0.4)] mb-10 group"
+        href="https://denzilrdz.qzz.io/"
+      >
+        VISIT NEW PORTFOLIO
+        <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform"
+          >arrow_forward</span
+        >
+      </a>
+      <!-- Redirect Info -->
+      <div class="w-full max-w-sm mx-auto flex flex-col items-center">
+        <p class="font-mono text-code text-on-muted opacity-60 mb-3">
+          You'll be redirected automatically in <span id="countdown">15</span>s
+        </p>
+        <!-- Redirect Progress Bar -->
+        <div class="w-full h-[2px] bg-void-mid rounded-none overflow-hidden mb-4">
+          <div class="h-full bg-mint progress-fill shadow-[0_0_10px_rgba(0,255,178,0.5)]"></div>
+        </div>
+        <!-- Cancel Link -->
+        <button
+          class="font-mono text-label text-on-muted hover:text-mint transition-colors uppercase tracking-widest underline decoration-outline-dim underline-offset-4 hover:decoration-mint cursor-pointer"
+          id="cancel-redirect"
+        >
+          STAY ON THIS PAGE
+        </button>
+      </div>
+    </main>
+
+    <!-- Interactive Scripts -->
+    <script type="module" src="/index.js"></script>
   </body>
 </html>
