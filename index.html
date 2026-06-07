@@ -70,11 +70,160 @@
     <!-- Tailwind v4 CDN -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://denzilrdz.github.io/denzilrodrigues/index.css" />
+    <!-- Custom Tailwind CSS -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-void: #050a0e;
+        --color-void-deep: #030608;
+        --color-void-low: #0a1310;
+        --color-void-mid: #0d1f1a;
+        --color-void-high: #132a24;
+        --color-void-top: #1a362f;
+        --color-void-bright: #204239;
+
+        --color-on-void: #dee3e9;
+        --color-on-muted: #b9cbbe;
+
+        --color-outline: #83958a;
+        --color-outline-dim: #3a4a41;
+
+        --color-mint: #00ffb2;
+        --color-mint-dim: #00e29d;
+        --color-mint-bright: #47ffb8;
+        --color-acid: #7bffa0;
+        --color-acid-fill: #5adf84;
+        --color-coral: #ff6b6b;
+        --color-danger: #ffb4ab;
+
+        --font-display: 'Syne', sans-serif;
+        --font-mono: 'Space Mono', monospace;
+
+        --radius-chip: 0px;
+
+        --blur-glass: 20px;
+
+        --text-display-xl: 80px;
+        --text-display-lg: 48px;
+        --text-display-mob: 36px;
+        --text-headline: 32px;
+        --text-body-lg: 18px;
+        --text-body-md: 16px;
+        --text-label: 12px;
+        --text-code: 14px;
+
+        --animate-blink: blink 1s step-end infinite;
+      }
+
+      @layer base {
+        html {
+          @apply bg-void text-on-void;
+        }
+        body {
+          @apply font-mono antialiased;
+        }
+      }
+
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+
+      /* Faint grid background */
+      .bg-grid {
+        background-size: 40px 40px;
+        background-image: linear-gradient(to right, rgba(0, 255, 178, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0, 255, 178, 0.03) 1px, transparent 1px);
+        mask-image: radial-gradient(circle at center, black, transparent 80%);
+        -webkit-mask-image: radial-gradient(circle at center, black, transparent 80%);
+      }
+
+      /* Subtle CRT scanline effect */
+      .scanlines {
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0) 50%,
+          rgba(0, 0, 0, 0.1) 50%,
+          rgba(0, 0, 0, 0.1)
+        );
+        background-size: 100% 4px;
+        pointer-events: none;
+      }
+
+      /* Particles container */
+      #particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+        overflow: hidden;
+      }
+
+      .particle {
+        position: absolute;
+        background-color: var(--color-mint);
+        border-radius: 50%;
+        opacity: 0;
+        animation: float-particle linear forwards;
+        box-shadow: 0 0 10px var(--color-mint);
+      }
+
+      @keyframes float-particle {
+        0% {
+          transform: translateY(100vh) scale(0);
+          opacity: 0;
+        }
+        20% {
+          opacity: 0.6;
+          transform: translateY(80vh) scale(1);
+        }
+        80% {
+          opacity: 0.6;
+          transform: translateY(20vh) scale(1);
+        }
+        100% {
+          transform: translateY(-10vh) scale(0);
+          opacity: 0;
+        }
+      }
+
+      /* Progress Bar Animation */
+      @keyframes fill-progress {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      .progress-fill {
+        animation: fill-progress 15s linear forwards;
+      }
+
+      .glow-text {
+        text-shadow: 0 0 20px rgba(0, 255, 178, 0.3);
+      }
+
+      .glass-card {
+        background-color: rgba(13, 31, 26, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(0, 255, 178, 0.2);
+        box-shadow: 0 0 40px rgba(0, 255, 178, 0.05);
+      }
+    </style>
   </head>
   <body
-    class="relative min-h-screen flex flex-col items-center justify-center font-mono text-body-md overflow-hidden bg-void text-on-void"
+    class="relative min-h-screen flex flex-col items-center justify-center font-mono text-body-md overflow-x-hidden bg-void text-on-void"
   >
     <!-- Top Progress Bar (Static thin line) -->
     <div
