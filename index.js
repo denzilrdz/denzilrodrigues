@@ -1,11 +1,11 @@
 // Particle System
-const particlesContainer = document.getElementById('particles');
+const particlesContainer = document.getElementById("particles");
 const particleCount = 30;
 
 function createParticle() {
   if (!particlesContainer) return;
-  const particle = document.createElement('div');
-  particle.classList.add('particle');
+  const particle = document.createElement("div");
+  particle.classList.add("particle");
 
   const size = Math.random() * 3 + 1; // 1px to 4px
   const left = Math.random() * 100; // 0% to 100%
@@ -21,7 +21,7 @@ function createParticle() {
   particlesContainer.appendChild(particle);
 
   // Remove and recreate particle when animation ends
-  particle.addEventListener('animationend', () => {
+  particle.addEventListener("animationend", () => {
     particle.remove();
     createParticle();
   });
@@ -34,8 +34,8 @@ for (let i = 0; i < particleCount; i++) {
 
 // Countdown Logic
 let timeLeft = 15;
-const countdownElement = document.getElementById('countdown');
-const progressBar = document.querySelector('.progress-fill');
+const countdownElement = document.getElementById("countdown");
+const progressBar = document.querySelector(".progress-fill");
 
 let countdownInterval = setInterval(() => {
   timeLeft--;
@@ -45,22 +45,22 @@ let countdownInterval = setInterval(() => {
   if (timeLeft <= 0) {
     clearInterval(countdownInterval);
     // Trigger redirect logic
-    window.location.href = 'https://denzilrdz.qzz.io/';
+    window.location.href = "https://denzilrdz.qzz.io/?ref=oldportfolio";
   }
 }, 1000);
 
 // Cancel Redirect Logic
-const cancelBtn = document.getElementById('cancel-redirect');
+const cancelBtn = document.getElementById("cancel-redirect");
 if (cancelBtn) {
-  cancelBtn.addEventListener('click', (e) => {
+  cancelBtn.addEventListener("click", (e) => {
     e.preventDefault();
     clearInterval(countdownInterval);
     if (countdownElement && countdownElement.parentElement) {
-      countdownElement.parentElement.innerHTML = 'Auto-redirect cancelled.';
+      countdownElement.parentElement.innerHTML = "Auto-redirect cancelled.";
     }
     if (progressBar) {
-      progressBar.style.animationPlayState = 'paused';
+      progressBar.style.animationPlayState = "paused";
     }
-    e.target.style.display = 'none';
+    e.target.style.display = "none";
   });
 }
